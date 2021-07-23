@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(171, 189, 216, 0.4)), to(rgba(225, 225, 225, 0.4))), url(../pictures/moscow-3530961_1920.jpg);
+  background: linear-gradient(to right, rgba(171, 189, 216, 0.4), rgba(225, 225, 225, 0.4)), url(../pictures/moscow-3530961_1920.jpg);
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero .container {
+  text-align: center;
+}
+
+.hero .container .container__heading {
+  font-family: "Pattaya", sans-serif;
+  text-transform: capitalize;
+  font-size: 4rem;
+  opacity: 0.9;
+  color: #313131;
+  letter-spacing: 0.05em;
+}
+
+.section {
+  height: 40vh;
+  width: 100%;
+  background-color: #e8eafd;
+  color: #313131;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  text-justify: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__title {
+  width: 100%;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  margin-bottom: 0.7em;
+}
+
+.section__paragraph {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.img-one {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../pictures/pexels-pixabay-164583.jpg);
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.2), rgba(255, 255, 255, 0.2)), url(../pictures/pexels-pixabay-164583.jpg);
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-two {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../pictures/image-4900745_1920.jpg);
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.2), rgba(255, 255, 255, 0.2)), url(../pictures/image-4900745_1920.jpg);
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.one {
+  background-color: #313131;
+  color: #e8eafd;
+}
+
+.img-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../pictures/pexels-vierro-3629813.jpg);
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.2), rgba(255, 255, 255, 0.2)), url(../pictures/pexels-vierro-3629813.jpg);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-three .img-three__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-three .img-three__container .img-title {
+  font-family: "Pattaya", sans-serif;
+  text-transform: capitalize;
+  font-size: 4rem;
+  opacity: 0.9;
+  color: #e8eafd;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    height: 50vh;
+    width: 100%;
+    background-color: #e8eafd;
+    color: #313131;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    text-justify: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section__title {
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+  }
+  .section__paragraph {
+    width: 90%;
+    font-size: 0.9em;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(171, 189, 216, 0.4)), to(rgba(225, 225, 225, 0.4))), url(../pictures/moscow-3530961_1920.jpg);
+    background: linear-gradient(to right, rgba(171, 189, 216, 0.4), rgba(225, 225, 225, 0.4)), url(../pictures/moscow-3530961_1920.jpg);
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .container .container__heading {
+    font-family: "Pattaya", sans-serif;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    opacity: 0.9;
+    color: #313131;
+    letter-spacing: 0.05em;
+  }
+  .img-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../pictures/pexels-vierro-3629813.jpg);
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.2), rgba(255, 255, 255, 0.2)), url(../pictures/pexels-vierro-3629813.jpg);
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .img-three .img-three__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .img-three .img-three__container .img-title {
+    font-family: "Pattaya", sans-serif;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    opacity: 0.9;
+    color: #e8eafd;
+    letter-spacing: 0.05em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,155 @@
+// imports
+@import 'resets';
+@import 'variables';
+@import 'layers';
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// mixins
+@mixin imgPosition {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+// main page
+.hero {
+  @include flexCenter;
+  background: $layer, url(../pictures/moscow-3530961_1920.jpg);
+  height: 100vh;
+  width: 100%;
+  @include imgPosition();
+  & .container {
+    text-align: center;
+    & .container__heading {
+      font-family: $landin-font;
+      text-transform: capitalize;
+      font-size: 4rem;
+      opacity: 0.9;
+      color: $txt-color;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+// secitons
+.section {
+  height: 40vh;
+  width: 100%;
+  background-color: $background-color;
+  color: $txt-color;
+  font-family: $btn-font;
+  text-align: center;
+  text-justify: center;
+  @include flexCenter();
+  flex-direction: column;
+  &__title {
+    width: 100%;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+  &__paragraph {
+    width: 100%;
+    font-size: 1.2em;
+  }
+}
+// images
+.img-one {
+  background: $layer-one, url(../pictures/pexels-pixabay-164583.jpg);
+  height: 500px;
+  width: 100%;
+  @include imgPosition();
+}
+
+.img-two {
+  background: $layer-one, url(../pictures/image-4900745_1920.jpg);
+  width: 100%;
+  height: 500px;
+  @include imgPosition();
+}
+
+.one {
+  background-color: $txt-color;
+  color: $background-color;
+}
+
+.img-three {
+  @include flexCenter;
+  background: $layer-one, url(../pictures/pexels-vierro-3629813.jpg);
+  width: 100%;
+  height: 100vh;
+  @include imgPosition();
+  & .img-three__container {
+    @include flexCenter;
+    & .img-title {
+      font-family: $landin-font;
+      text-transform: capitalize;
+      font-size: 4rem;
+      opacity: 0.9;
+      color: $background-color;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+  }
+}
+// media quearies
+@media screen and (max-width: $mobile-width) {
+  .section {
+    height: 50vh;
+    width: 100%;
+    background-color: $background-color;
+    color: $txt-color;
+    font-family: $btn-font;
+    text-align: center;
+    text-justify: center;
+    @include flexCenter();
+    flex-direction: column;
+    &__title {
+      letter-spacing: 0.1em;
+      font-size: 1.2em;
+      margin-bottom: 0.7em;
+    }
+    &__paragraph {
+      width: 90%;
+      font-size: 0.9em;
+    }
+  }
+  .hero {
+    @include flexCenter;
+    background: $layer, url(../pictures/moscow-3530961_1920.jpg);
+    height: 100vh;
+    width: 100%;
+    @include imgPosition();
+    & .container {
+      @include flexCenter;
+      & .container__heading {
+        font-family: $landin-font;
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        opacity: 0.9;
+        color: $txt-color;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+  .img-three {
+    @include flexCenter;
+    background: $layer-one, url(../pictures/pexels-vierro-3629813.jpg);
+    width: 100%;
+    height: 100vh;
+    @include imgPosition();
+    & .img-three__container {
+      @include flexCenter;
+      & .img-title {
+        font-family: $landin-font;
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        opacity: 0.9;
+        color: $background-color;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+}
